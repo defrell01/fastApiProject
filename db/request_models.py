@@ -15,3 +15,13 @@ class ParkingLots(BaseModel):
 
 class EndingBooking(BaseModel):
     parking_lot: int
+
+
+class AdminRequest(BaseModel):
+    login: str
+    password: str
+
+
+class AdminBook(BaseModel):
+    parkingLot: int
+    carNumber: str
